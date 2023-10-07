@@ -36,9 +36,8 @@ section h2,h3,h4{
     padding-top: 5px;
 }
 nav{
-    background-color: var(--cor-secundaria);
-    padding: var(--espacamento);
-    
+    background-image: linear-gradient(to bottom,var(--cor-secundaria),#7cc9cb) ;
+    padding: var(--espacamento);    
 }
 .nav{
     top: 15px;
@@ -120,4 +119,16 @@ article ol{
 }
 img{
     border-radius: 15px;
+}
+.instagram,.github,.email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.instagram img,.github img,.email img{
+    height: 25px;
+    width: 30px;
+    padding-left: 5px;
 }
