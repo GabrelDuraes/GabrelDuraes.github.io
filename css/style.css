@@ -16,7 +16,6 @@ a{
     
 }
 a:hover{
-    color: #FFD700;
     text-decoration: none;
 }
 a.navigation{
@@ -36,10 +35,37 @@ section h2,h3,h4{
     padding-top: 5px;
 }
 nav{
-    background-image: linear-gradient(to bottom,var(--cor-secundaria),#7cc9cb) ;
+    background-color: var(--cor-secundaria);
     padding: var(--espacamento);    
 }
+
+/*Barrinha do link*/
+.nav ol li a::after{
+    content: " ";
+    height: 2px;
+    width: 0%;
+    background-color: #fff;
+    margin: 1.5rem;
+    left: 0;
+    position: absolute;
+    transition: .5s;
+}
+
+.nav a:hover::after{
+    width: 85%;
+}
+
+/*Termino Barrinha do link*/
+.nav ol li{
+    margin-bottom: 6px;
+}
+
+.nav a{
+    padding: 3px;
+}
+
 .nav{
+   
     top: 15px;
     position: sticky;
 }
@@ -90,13 +116,13 @@ h1{
     max-width: 200px;
     align-items: center;
 }
-.imagemInicial{
-    height: auto;
-    width: 50%;
+.imagemInicial{  
+    width:auto;
+    height:50%;
     margin: auto;
     display:block;
     padding-bottom: 5px;
-    max-width: 500px;
+    max-width: 300px;
 }
 .flex{
     display: flex;
