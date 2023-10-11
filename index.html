@@ -23,10 +23,12 @@
 <body>
   <div class="container">
     <header class="header">
-      <!--Cabeçalho-->
-      <h3>Autor da página: Gabriel da Silva Durães</h3>
-      <a href="#sobremim" class="titulo">Sobre mim</a> -
-      <a href="#contato" class="titulo">Contato</a>
+      <div>
+        <!--Cabeçalho-->
+        <h3 class="">Autor da página: Gabriel da Silva Durães</h3>
+        <a href="#sobremim" class="aumenta">Sobre mim&nbsp;</a> |
+        <a href="#contato" class="aumenta">&nbsp;Contato</a>
+      </div>
     </header>
     <nav class="navigation">
       <!--Sumario-->
@@ -50,6 +52,9 @@
         </ol>
       </div>
     </nav>
+    <div class="home">
+      <a href="#topo" class="aumenta topo"><img src="imagem/silhueta-de-icone-de-casa.png" alt=""></a>
+    </div>
     <article class="content">
       <a id="topo"></a>
       <div class="titulotexto">
@@ -57,22 +62,24 @@
       </div>
       <!--Desenvolvimento Web-->
       <section>
-        <!--Resumo-->
-        <a id="introducao"></a>
-        <h2>Introdução</h2>
-        <p>
-          &nbsp;No cenário digital em constante expansão, o desenvolvimento web se ergue como uma força vital,
-          conectando
-          ideias, empresas e comunidades em todo o mundo. É através desse processo dinâmico e multifacetado que a
-          arquitetura da internet toma forma, transformando conceitos abstratos em interfaces tangíveis. Do canto mais
-          criativo do design visual ao intrincado núcleo do processamento de dados, o desenvolvimento web se desdobra
-          como
-          uma jornada que incorpora a estética e a funcionalidade, a lógica e a criatividade. Nesta exploração,
-          mergulhamos nos fundamentos essenciais e nas inovações recentes que moldam nossa experiência online,
-          descobrindo
-          como a intersecção da tecnologia e da arte nos permite trilhar um caminho ininterrupto rumo à interatividade
-          digital.
-        </p>
+        <div class="introducao">
+          <!--Resumo-->
+          <a id="introducao"></a>
+          <h2>Introdução</h2>
+          <p>
+            &nbsp;No cenário digital em constante expansão, o desenvolvimento web se ergue como uma força vital,
+            conectando
+            ideias, empresas e comunidades em todo o mundo. É através desse processo dinâmico e multifacetado que a
+            arquitetura da internet toma forma, transformando conceitos abstratos em interfaces tangíveis. Do canto mais
+            criativo do design visual ao intrincado núcleo do processamento de dados, o desenvolvimento web se desdobra
+            como
+            uma jornada que incorpora a estética e a funcionalidade, a lógica e a criatividade. Nesta exploração,
+            mergulhamos nos fundamentos essenciais e nas inovações recentes que moldam nossa experiência online,
+            descobrindo
+            como a intersecção da tecnologia e da arte nos permite trilhar um caminho ininterrupto rumo à interatividade
+            digital.
+          </p>
+        </div>
       </section>
 
       <section>
@@ -88,7 +95,7 @@
             eletrônico e aplicativos de última geração, essa disciplina molda a maneira como navegamos e interagimos no
             mundo online.
           </p>
-          <img class="imagemInicial" src="imagem/desenvolvedor.png" alt="Imagem desenvolvedor" >
+          <img class="imagemInicial" src="imagem/desenvolvedor.png" alt="Imagem desenvolvedor">
         </div>
       </section>
 
@@ -365,8 +372,6 @@
         </p>
       </section>
 
-
-
       <section>
         <a id="PrincipaisTecnoligias"></a>
         <h2>Principais tecnologias de desenvolvimento web.</h2>
@@ -382,7 +387,7 @@
         <div class="centralizar">
           <h4>HTML</h4>
         </div>
-        <div class="flex">
+        <div class="flex imagem_geral">
           <ul>
             <li>
               <p>
@@ -404,7 +409,7 @@
         <div class="centralizar">
           <h4>CSS</h4>
         </div>
-        <div class="flex">
+        <div class="flex imagem_geral">
           <img class="imagem" src="imagem/css.png" alt="logo CSS 3">
           <ul>
             <li>
@@ -430,7 +435,7 @@
         <div class="centralizar">
           <h4>JavaScript</h4>
         </div>
-        <div class="flex">
+        <div class="flex imagem_geral">
           <ul>
             <li>
               <p>
@@ -500,79 +505,108 @@
           recomendados são:
         </p>
         <ol>
-          <li><strong>Visual Studio Code (VS Code):</strong> Um editor de código gratuito e altamente extensível
+          <li class="imagem_geral"><strong>Visual Studio Code (VS Code):</strong> Um editor de código gratuito e
+            altamente extensível
             desenvolvido pela
             Microsoft.
             Ele oferece uma ampla gama de recursos, como realce de sintaxe, depuração integrada, controle de versão e
             suporte a extensões. <br>
             <a href="https://code.visualstudio.com/">Clique aqui para baixar o Visual Studio Code</a><br>
-            <img class="imagem" src="imagem/vsc.jpg" alt="logo Visual Studio Code">
+            <div class="centralizar">
+              <img class="imagem" src="imagem/vsc.jpg" alt="logo Visual Studio Code">
+            </div>
           </li>
 
-          <li><strong>Sublime Text:</strong> Um editor de código leve, rápido e altamente personalizável, com uma grande
+          <li class="imagem_geral"><strong>Sublime Text:</strong> Um editor de código leve, rápido e altamente
+            personalizável, com uma grande
             comunidade de
             usuários e uma variedade de plugins. <br>
             <a href="https://www.sublimetext.com/">Clique aqui para baixar o Sublime Text</a><br>
-            <img class="imagem" src="imagem/sublime.png" alt="logo Sublime Text">
+            <div class="centralizar">
+              <img class="imagem" src="imagem/sublime.png" alt="logo Sublime Text">
+            </div>
           </li>
-          <li><strong>Atom:</strong>
+          <li class="imagem_geral"><strong>Atom:</strong>
             Um editor de código de código aberto desenvolvido pelo GitHub. É altamente personalizável e possui uma
             comunidade ativa de desenvolvedores criando extensões. O Atom foi arquivado pelo GitHub, pois detectaram um
             acesso não autorizado a um conjunto de repositórios utilizados no planejamento e desenvolvimento do próprio,
             não sendo um editor atualizado quanto os outros citados. <br>
             <a href="https://atom.io/">Clique aqui para baixar o Atom</a><br>
-            <img class="imagem" src="imagem/atom.png" alt="logo Atom">
+            <div class="centralizar">
+              <img class="imagem" src="imagem/atom.png" alt="logo Atom">
+            </div>
           </li>
 
-          <li><strong>Visual Studio:</strong> Uma IDE (Integrated Development Environment) poderosa da Microsoft,
+          <li class="imagem_geral"><strong>Visual Studio:</strong> Uma IDE (Integrated Development Environment) poderosa
+            da Microsoft,
             adequada
             para uma ampla
             variedade de linguagens e plataformas. Ele oferece uma série de ferramentas avançadas para
             desenvolvimento.<br>
             <a href="https://visualstudio.microsoft.com/">Clique aqui para baixar o Visual Studio</a><br>
-            <img class="imagem" src="imagem/vs.png" alt="logo Visual Studio">
+            <div class="centralizar">
+              <img class="imagem" src="imagem/vs.png" alt="logo Visual Studio">
+            </div>
           </li>
 
-          <li><strong>WebStorm:</strong> Uma IDE da JetBrains voltada para desenvolvimento web. Ela oferece suporte a
+          <li class="imagem_geral"><strong>WebStorm:</strong> Uma IDE da JetBrains voltada para desenvolvimento web. Ela
+            oferece suporte a
             tecnologias front-end
             e back-end, bem como recursos avançados de produtividade. <br>
             <a href="https://www.jetbrains.com/webstorm/">Clique aqui para baixar o WebStorm</a> <br>
-            <img class="imagem" src="imagem/web.jpg" alt="logo WebStorm">
+            <div class="centralizar">
+              <img class="imagem" src="imagem/web.jpg" alt="logo WebStorm">
+            </div>
           </li>
 
-          <li><strong>Brackets:</strong> Um editor de código de código aberto desenvolvido pela Adobe, projetado
+          <li class="imagem_geral"><strong>Brackets:</strong> Um editor de código de código aberto desenvolvido pela
+            Adobe, projetado
             especificamente para
             desenvolvimento web, com recursos como edição ao vivo e visualização em tempo real. <br>
             <a href="http://brackets.io/">Clique aqui para baixar o Brackets</a><br>
-            <img class="imagem" src="imagem/brackets.jpg" alt="logo Brackets">
+            <div class="centralizar">
+              <img class="imagem" src="imagem/brackets.jpg" alt="logo Brackets">
+            </div>
           </li>
 
-          <li><strong>Emacs:</strong> Um editor de texto altamente personalizável e expansível que tem uma curva de
+          <li class="imagem_geral"><strong>Emacs:</strong> Um editor de texto altamente personalizável e expansível que
+            tem uma curva de
             aprendizado íngreme,
             mas oferece uma infinidade de recursos e extensões. <br>
             <a href="https://www.gnu.org/software/emacs/">Clique aqui para baixar o Emacs</a><br>
-            <img class="imagem" src="imagem/emacs.png" alt="logo Emacs">
+            <div class="centralizar">
+              <img class="imagem" src="imagem/emacs.png" alt="logo Emacs">
+            </div>
           </li>
 
-          <li><strong>Vim:</strong> Um editor de texto poderoso e altamente configurável, conhecido por sua eficiência e
+          <li class="imagem_geral"><strong>Vim:</strong> Um editor de texto poderoso e altamente configurável, conhecido
+            por sua eficiência e
             controle granular
             por meio de comandos. <br>
             <a href="https://www.vim.org/">Clique aqui para baixar o Vim</a><br>
-            <img class="imagem" src="imagem/vim.png" alt="logo Vim">
+            <div class="centralizar">
+              <img class="imagem" src="imagem/vim.png" alt="logo Vim">
+            </div>
           </li>
 
-          <li><strong>Notepad++:</strong> Um editor de código leve para Windows que oferece uma variedade de recursos
+          <li class="imagem_geral"><strong>Notepad++:</strong> Um editor de código leve para Windows que oferece uma
+            variedade de recursos
             úteis para
             desenvolvimento. <br>
             <a href="https://notepad-plus-plus.org/">Clique aqui para baixar o Notepad++</a><br>
-            <img class="imagem" src="imagem/notepad.png" alt="logo Notepad++">
+            <div class="centralizar">
+              <img class="imagem" src="imagem/notepad.png" alt="logo Notepad++">
+            </div>
           </li>
 
-          <li><strong>Nova:</strong> Um editor de código relativamente novo que ganhou popularidade por sua interface
+          <li class="imagem_geral"><strong>Nova:</strong> Um editor de código relativamente novo que ganhou popularidade
+            por sua interface
             moderna e recursos
             intuitivos. <br>
             <a href="https://nova.app/">Clique aqui para baixar o Nova</a><br>
-            <img class="imagem" src="imagem/nova.png" alt="logo Nova">
+            <div class="centralizar">
+              <img class="imagem" src="imagem/nova.png" alt="logo Nova">
+            </div>
           </li>
         </ol>
         <p>&nbsp;&nbsp;Lembre-se de que a escolha do editor de código é altamente subjetiva e pode variar com base nas
@@ -589,7 +623,7 @@
           sites de negócios, etc. Alguns dos mais populares são:
         </p>
         <ol>
-          <li>
+          <li class="imagem_geral">
             <p><strong>GitHub Pages:</strong> Se você estiver usando Git e desejar hospedar um site estático, o GitHub
               Pages
               é uma excelente
@@ -597,52 +631,66 @@
               um
               repositório GitHub.</p>
             <a href="https://pages.github.com/">Clique aqui para acessar o GitHub Pages</a><br>
-            <img class="imagem" src="imagem/githubpages.png" alt="logo GitHub Pages">
+            <div class="centralizar">
+              <img class="imagem" src="imagem/githubpages.png" alt="logo GitHub Pages">
+            </div>
           </li>
-          <li>
+          <li class="imagem_geral">
             <p><strong>Netlify:</strong> Netlify oferece hospedagem gratuita para sites estáticos e possui integração
               contínua, permitindo
               que você publique automaticamente as alterações do seu repositório Git.</p>
             <a href="https://www.netlify.com/">Clique aqui para acessar o Netlify</a><br>
-            <img class="imagem" src="imagem/netlify.png" alt="logo Netlify">
+            <div class="centralizar">
+              <img class="imagem" src="imagem/netlify.png" alt="logo Netlify">
+            </div>
           </li>
-          <li>
+          <li class="imagem_geral">
             <p><strong>Vercel:</strong> Assim como o Netlify, o Vercel é uma plataforma de hospedagem gratuita para
               sites
               estáticos. Ele também suporta integração com Git e oferece implantação contínua.</p>
             <a href="https://vercel.com/">Clique aqui para acessar o Vercel</a><br>
-            <img class="imagem" src="imagem/vercel.png" alt="logo Vercel">
+            <div class="centralizar">
+              <img class="imagem" src="imagem/vercel.png" alt="logo Vercel">
+            </div>
           </li>
-          <li>
+          <li class="imagem_geral">
             <p><strong>Firebase Hosting:</strong> O Firebase, da Google, oferece hospedagem gratuita para sites
               estáticos
               e aplicativos web. É especialmente útil se você também estiver interessado em usar outros serviços
               Firebase,
               como autenticação e banco de dados em tempo real.</p>
             <a href="https://firebase.google.com/">Clique aqui para acessar o Firebase Hosting</a><br>
-            <img class="imagem" src="imagem/firebase.png" alt="logo Firebase Hosting">
+            <div class="centralizar">
+              <img class="imagem" src="imagem/firebase.png" alt="logo Firebase Hosting">
+            </div>
           </li>
-          <li>
+          <li class="imagem_geral">
             <p><strong>000WebHost:</strong> É uma opção popular de hospedagem gratuita que suporta PHP e bancos de dados
               MySQL. No entanto, a versão gratuita pode ter algumas limitações em termos de recursos e largura de banda.
             </p>
             <a href="https://www.000webhost.com/">Clique aqui para acessar o 000WebHost</a><br>
-            <img class="imagem" src="imagem/000webhosting.png" alt="logo 000WebHost">
+            <div class="centralizar">
+              <img class="imagem" src="imagem/000webhosting.png" alt="logo 000WebHost">
+            </div>
           </li>
-          <li>
+          <li class="imagem_geral">
             <p><strong>InfinityFree:</strong> Oferece hospedagem gratuita com suporte a PHP e MySQL, além de um
               construtor
               de
               site simples.</p>
             <a href="https://infinityfree.net/">Clique aqui para acessar o InfinityFree</a><br>
-            <img class="imagem" src="imagem/infinity.png" alt="logo InfinityFree">
+            <div class="centralizar">
+              <img class="imagem" src="imagem/infinity.png" alt="logo InfinityFree">
+            </div>
           </li>
-          <li>
+          <li class="imagem_geral">
             <p><strong>Heroku:</strong> Embora tenha uma camada gratuita, Heroku é mais voltado para aplicativos web
               dinâmicos e não estáticos. Ele oferece suporte a várias linguagens de programação, como Node.js, Ruby,
               Python, etc.</p>
             <a href="https://www.heroku.com/">Clique aqui para acessar o Heroku</a><br>
-            <img class="imagem" src="imagem/heroku.png" alt="logo Heroku">
+            <div class="centralizar">
+              <img class="imagem" src="imagem/heroku.png" alt="logo Heroku">
+            </div>
           </li>
         </ol>
         <p>
@@ -777,11 +825,11 @@
         </div>
         <div class="github">
           <img src="/imagem/github.png" alt="Logo GitHub">
-          GitHub: <a href="https://github.com/GabrelDuraes">GabrelDuraes</a> <br>
+          GitHub:&nbsp;<a href="https://github.com/GabrelDuraes" class="aumenta">GabrelDuraes</a> <br>
         </div>
         <div class="instagram">
           <img src="/imagem/instagram.png" alt="Logo instagram">
-          Instagram: <a href="https://www.instagram.com/gabrelduraes/">@gabrelduraes</a>
+          Instagram:&nbsp;<a href="https://www.instagram.com/gabrelduraes/" class="aumenta"> @gabrelduraes</a>
         </div>
         </p>
 
@@ -795,7 +843,6 @@
             conteúdo.
           </strong>
         </p>
-        <a href="#topo">Voltar ao topo</a>
         <p>&copy; 2023 Gabriel da Silva Durães. Todos os direitos reservados.</p>
       </section>
     </footer>
