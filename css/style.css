@@ -180,13 +180,31 @@ h4 {
     transform: scale(0.9);
     color: aqua;
 }
-
-.flex {
+.flexCSS{
     display: flex;
+    flex-direction: row-reverse;
     gap: 20px;
     align-items: center;
     padding-top: 20px;
-
+    @media (max-width:945px){
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
+.flex {
+    display: flex;
+  
+    gap: 20px;
+    align-items: center;
+    padding-top: 20px;
+    @media (max-width:945px){
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
 }
 
 .centralizar {
